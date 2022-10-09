@@ -13,7 +13,6 @@ namespace Software2KnowledgeCheck1
 
         public bool HasParking { get; set; }
 
-        public List<Building> Buildings { get; } = new List<Building>();
 
         public void CreateApartment(Apartment apartment)
         {

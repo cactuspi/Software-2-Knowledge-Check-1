@@ -12,6 +12,7 @@ namespace Software2KnowledgeCheck1
 
         public int StreetNumber { get; set; }
 
+
         public bool ConstructBuilding<T>(List<string> materials, bool permit, bool zoning) where T : Building
         {
             if (permit && zoning)

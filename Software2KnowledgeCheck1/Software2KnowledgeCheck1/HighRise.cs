@@ -12,9 +12,8 @@ namespace Software2KnowledgeCheck1
         public string OwnerName { get; set; }
         public List<string> Directory  { get; set; }
 
-        public List<Building> Buildings { get; } = new List<Building>();
 
-        public void CreateApartment(HighRise highrise)
+        public void CreateHighrise(HighRise highrise)
         {
             // Get materials
             var materialRepo = new MaterialsRepo();
