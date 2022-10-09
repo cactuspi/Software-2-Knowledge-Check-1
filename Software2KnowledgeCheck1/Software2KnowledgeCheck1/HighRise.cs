@@ -12,22 +12,5 @@ namespace Software2KnowledgeCheck1
         public string OwnerName { get; set; }
         public List<string> Directory  { get; set; }
 
-
-        public void CreateHighrise(HighRise highrise)
-        {
-            // Get materials
-            var materialRepo = new MaterialsRepo();
-            var materialsNeeded = materialRepo.GetMaterials();
-
-            var permitRepo = new ZoningAndPermitRepo();
-
-            var buildingWasMade = ConstructBuilding<HighRise>(materialsNeeded, permitRepo.GetPermit(), permitRepo.ZoningApproves());
-
-            if (buildingWasMade)
-            {
-                Buildings.Add(highrise);
-            }
-        }
-
     }
 }
