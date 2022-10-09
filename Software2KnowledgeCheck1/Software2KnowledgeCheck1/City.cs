@@ -14,8 +14,5 @@ namespace Software2KnowledgeCheck1
         public int Population { get; set; }
 
        
-
-        
-        
     }
 }
